@@ -1,0 +1,686 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00A2E233096353C11D57AA0C /* TCPTransport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095F96329A3213284717BFAB /* TCPTransport.swift */; };
+		08B934896FDEA4F0768035D7 /* DataRetentionServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD8DF71031CE0D5F09169B8 /* DataRetentionServiceTests.swift */; };
+		0CD1E297AFA13AFA867B4113 /* HostCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1507473F1A00A2E1CDF91A95 /* HostCardView.swift */; };
+		0E58C7F9ED67830863A3319C /* HostCardListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020D4B366C6EF1B86F9E1250 /* HostCardListView.swift */; };
+		19BE75861500F85A6079420D /* PingTransport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F1159C7FF6E1D4A2D602C78 /* PingTransport.swift */; };
+		26FFC4C4E912D03A1DC943EF /* ModelsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ED690304016382C0B9A0666 /* ModelsTests.swift */; };
+		27A44BC2D136DD0A05ECD7B2 /* InterfaceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506E8E648FCF5231792F5C2C /* InterfaceManager.swift */; };
+		34E5765BE4A23E591E332D48 /* AddEditHostSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56BCA9EB90A0335FE2F38608 /* AddEditHostSheet.swift */; };
+		373417CF7DB24BDC0373CF4D /* HostConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5249AC960E15F2709C13260D /* HostConfiguration.swift */; };
+		4748475DFBA1342AAE9B6144 /* DNSResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84E5E4E6616FAF2BD37CF56 /* DNSResolver.swift */; };
+		59DD15B53FC4DBBC47F638F0 /* Sounds in Resources */ = {isa = PBXBuildFile; fileRef = 2A294B19CDFD343B08F5473F /* Sounds */; };
+		5F617A25C23DE4607D6B14E3 /* TronTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BBCC014E54895FFE3B0CFE /* TronTheme.swift */; };
+		63BD8F31B980CC63B1131BC3 /* PingResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F8042C114EAB6F70DD215D9 /* PingResult.swift */; };
+		6D1C7BD8A09F7C880CBFBD66 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80F44B3B3237EF2D9332B7BE /* Assets.xcassets */; };
+		6E405915C5563F46CE27CD4D /* InterfaceManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EFE4AF7151FC62BF28EE3FE /* InterfaceManagerTests.swift */; };
+		7D62FD7ABDBC06ADC0570984 /* HostMonitorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0782EFB000F739AD7EBADE /* HostMonitorTests.swift */; };
+		85816D16E9658BB687703CB2 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1279392FCA30AE326F756A6D /* MainView.swift */; };
+		8720F5CEBAB2A524AF0762A0 /* FilterChipBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A55B30BEF3C11D1980911B /* FilterChipBar.swift */; };
+		92F20DBC6E8338D1DECC6D32 /* ShareConfigSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF06BBBBB5C212692469921C /* ShareConfigSheet.swift */; };
+		980339F21062133E2AF42EBE /* ICMPTransportTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC040844C0DFAD107B2A31C /* ICMPTransportTests.swift */; };
+		A061ABEFACAA1B0745512347 /* ExportService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201BF89C6454436D72E206BB /* ExportService.swift */; };
+		A436DB18C79F8582D330C4E4 /* ConfigFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D421D9FE6E3B5A69A93783 /* ConfigFile.swift */; };
+		A7EB3596943553799A464920 /* MonitoringEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A354FF773851C5B3ADA877A /* MonitoringEngine.swift */; };
+		A7FAD0585BB402B010DE9638 /* SplitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADC697C4BFAEC5950722523 /* SplitView.swift */; };
+		B75876C277AEDD3D4F90DB26 /* DNSChangePopover.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0CC0E51AA6E6CED5EE3A20D /* DNSChangePopover.swift */; };
+		B7E56CE34DA7E49BA6A231DA /* ToolbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E47EEFCE766667FE46E42ACA /* ToolbarView.swift */; };
+		B94AFED4E98485B4BB96E0FF /* DataRetentionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 360A8C71C3773EA2F8268B0D /* DataRetentionService.swift */; };
+		BB23CF918F38C1904F40A119 /* ExportServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9BD2FEC46E21A78406834E3 /* ExportServiceTests.swift */; };
+		BF4659DDC06F53234D98A02A /* ThemeModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = B738C5BD8646B389FE814958 /* ThemeModifiers.swift */; };
+		C2C34E2A78FB30C2199F357B /* SoundManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C52EA42D84F80320725AC9F /* SoundManager.swift */; };
+		C3B9CABA6711028227D2F35E /* HostHistogramStrip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717F08DC37FC769FFE089695 /* HostHistogramStrip.swift */; };
+		C889F7E7AF29AEE4EAA2A1A2 /* DNSResolution.swift in Sources */ = {isa = PBXBuildFile; fileRef = B128B53649B3A5B69A6FF0E2 /* DNSResolution.swift */; };
+		CA1FDE5D709EB569F7BB31A2 /* ICMPTransport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0CAA8A3059507D1655733A /* ICMPTransport.swift */; };
+		D0542904F38767A98D9729D6 /* HistogramStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AC2C5C1F9AC3CA2A906A89B /* HistogramStackView.swift */; };
+		D196D47F294A3F308BE3568E /* SoundManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CF0C87B8ED87A1FEF12ED3 /* SoundManagerTests.swift */; };
+		D796AACD8B15426FC82CDED3 /* PingProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2164AE3A4A136E4057901DA5 /* PingProtocol.swift */; };
+		DB00FD9A22DE77A5ABFC7691 /* TCPTransportTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB4B6DDBE4C2167EB7B98E07 /* TCPTransportTests.swift */; };
+		DFC83512C88218B63FA3131A /* SettingsSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D329491AD8E44AE4C985977 /* SettingsSheet.swift */; };
+		E376173EB12E0F51C918A7CB /* PingyDingyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60F7706C617DA32B4C0F6109 /* PingyDingyTests.swift */; };
+		EB183F7097787F0FDEAB75E8 /* EmptyStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE1C2A2D561EA2B6D660E5E /* EmptyStateView.swift */; };
+		EBFB57290C1E5574446B2406 /* ConfigFileTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBF8D439AEB5F4441CF3670 /* ConfigFileTests.swift */; };
+		EC20E1F3EBA28405E12E5DAD /* ExportSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 360161DB61520D74F3CC126E /* ExportSheet.swift */; };
+		EC75B646164C89D3C03A96E7 /* HostMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8925AB494AEEC57DCA22C109 /* HostMonitor.swift */; };
+		EF64130436422548659E6369 /* PingyDingyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BEFD6EAEFCC8C9E756B3112 /* PingyDingyApp.swift */; };
+		F8A86F8BD79C38F8C63A2567 /* ImportPreviewSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 246FA17580B63727BB034845 /* ImportPreviewSheet.swift */; };
+		FEF38316955CA640EB7F3D19 /* DNSResolverTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9AB431809C6442671F49B29 /* DNSResolverTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A205526C22B274404216FED6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B1E4FE071949C14C8E86263D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 77475D2BCE6C8CCE8D87790D;
+			remoteInfo = PingyDingy;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		020D4B366C6EF1B86F9E1250 /* HostCardListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostCardListView.swift; sourceTree = "<group>"; };
+		095F96329A3213284717BFAB /* TCPTransport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCPTransport.swift; sourceTree = "<group>"; };
+		0FD8DF71031CE0D5F09169B8 /* DataRetentionServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataRetentionServiceTests.swift; sourceTree = "<group>"; };
+		1279392FCA30AE326F756A6D /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		14BBCC014E54895FFE3B0CFE /* TronTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TronTheme.swift; sourceTree = "<group>"; };
+		14D421D9FE6E3B5A69A93783 /* ConfigFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigFile.swift; sourceTree = "<group>"; };
+		1507473F1A00A2E1CDF91A95 /* HostCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostCardView.swift; sourceTree = "<group>"; };
+		1A354FF773851C5B3ADA877A /* MonitoringEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonitoringEngine.swift; sourceTree = "<group>"; };
+		1ED690304016382C0B9A0666 /* ModelsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelsTests.swift; sourceTree = "<group>"; };
+		201BF89C6454436D72E206BB /* ExportService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExportService.swift; sourceTree = "<group>"; };
+		2164AE3A4A136E4057901DA5 /* PingProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PingProtocol.swift; sourceTree = "<group>"; };
+		246FA17580B63727BB034845 /* ImportPreviewSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImportPreviewSheet.swift; sourceTree = "<group>"; };
+		2A294B19CDFD343B08F5473F /* Sounds */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Sounds; sourceTree = SOURCE_ROOT; };
+		2ADC697C4BFAEC5950722523 /* SplitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplitView.swift; sourceTree = "<group>"; };
+		2C0CAA8A3059507D1655733A /* ICMPTransport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ICMPTransport.swift; sourceTree = "<group>"; };
+		360161DB61520D74F3CC126E /* ExportSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExportSheet.swift; sourceTree = "<group>"; };
+		360A8C71C3773EA2F8268B0D /* DataRetentionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataRetentionService.swift; sourceTree = "<group>"; };
+		4BEFD6EAEFCC8C9E756B3112 /* PingyDingyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PingyDingyApp.swift; sourceTree = "<group>"; };
+		506E8E648FCF5231792F5C2C /* InterfaceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceManager.swift; sourceTree = "<group>"; };
+		5249AC960E15F2709C13260D /* HostConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostConfiguration.swift; sourceTree = "<group>"; };
+		56BCA9EB90A0335FE2F38608 /* AddEditHostSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEditHostSheet.swift; sourceTree = "<group>"; };
+		59A55B30BEF3C11D1980911B /* FilterChipBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterChipBar.swift; sourceTree = "<group>"; };
+		60F7706C617DA32B4C0F6109 /* PingyDingyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PingyDingyTests.swift; sourceTree = "<group>"; };
+		6AC2C5C1F9AC3CA2A906A89B /* HistogramStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistogramStackView.swift; sourceTree = "<group>"; };
+		717F08DC37FC769FFE089695 /* HostHistogramStrip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostHistogramStrip.swift; sourceTree = "<group>"; };
+		7C52EA42D84F80320725AC9F /* SoundManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundManager.swift; sourceTree = "<group>"; };
+		7EFE4AF7151FC62BF28EE3FE /* InterfaceManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceManagerTests.swift; sourceTree = "<group>"; };
+		7F8042C114EAB6F70DD215D9 /* PingResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PingResult.swift; sourceTree = "<group>"; };
+		80F44B3B3237EF2D9332B7BE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8925AB494AEEC57DCA22C109 /* HostMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostMonitor.swift; sourceTree = "<group>"; };
+		9D329491AD8E44AE4C985977 /* SettingsSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsSheet.swift; sourceTree = "<group>"; };
+		9F1159C7FF6E1D4A2D602C78 /* PingTransport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PingTransport.swift; sourceTree = "<group>"; };
+		A0CC0E51AA6E6CED5EE3A20D /* DNSChangePopover.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DNSChangePopover.swift; sourceTree = "<group>"; };
+		A84E5E4E6616FAF2BD37CF56 /* DNSResolver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DNSResolver.swift; sourceTree = "<group>"; };
+		AD82DFFB663307DF181EC758 /* PingyDingy.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PingyDingy.entitlements; sourceTree = "<group>"; };
+		AEE1C2A2D561EA2B6D660E5E /* EmptyStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyStateView.swift; sourceTree = "<group>"; };
+		B128B53649B3A5B69A6FF0E2 /* DNSResolution.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DNSResolution.swift; sourceTree = "<group>"; };
+		B738C5BD8646B389FE814958 /* ThemeModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeModifiers.swift; sourceTree = "<group>"; };
+		BA79A796BA5BE0EBCF1845CA /* PingyDingy.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = PingyDingy.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9AB431809C6442671F49B29 /* DNSResolverTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DNSResolverTests.swift; sourceTree = "<group>"; };
+		CBBB4A178327877DBA6A3D85 /* PingyDingyTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = PingyDingyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2CF0C87B8ED87A1FEF12ED3 /* SoundManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundManagerTests.swift; sourceTree = "<group>"; };
+		D9BD2FEC46E21A78406834E3 /* ExportServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExportServiceTests.swift; sourceTree = "<group>"; };
+		DB0782EFB000F739AD7EBADE /* HostMonitorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostMonitorTests.swift; sourceTree = "<group>"; };
+		DDBF8D439AEB5F4441CF3670 /* ConfigFileTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigFileTests.swift; sourceTree = "<group>"; };
+		E47EEFCE766667FE46E42ACA /* ToolbarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolbarView.swift; sourceTree = "<group>"; };
+		FB4B6DDBE4C2167EB7B98E07 /* TCPTransportTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCPTransportTests.swift; sourceTree = "<group>"; };
+		FF06BBBBB5C212692469921C /* ShareConfigSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareConfigSheet.swift; sourceTree = "<group>"; };
+		FFC040844C0DFAD107B2A31C /* ICMPTransportTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ICMPTransportTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		013CCA1C4CB4CC69A0B35B9A = {
+			isa = PBXGroup;
+			children = (
+				2A294B19CDFD343B08F5473F /* Sounds */,
+				55706214B78BC4BBEF17A733 /* PingyDingy */,
+				BEAC1307809E4EB996AA3EA3 /* PingyDingyTests */,
+				65B295A70847DFDDE7EAD541 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		169D0D1915D104223D181B56 /* Engine */ = {
+			isa = PBXGroup;
+			children = (
+				C9AB431809C6442671F49B29 /* DNSResolverTests.swift */,
+				DB0782EFB000F739AD7EBADE /* HostMonitorTests.swift */,
+				FFC040844C0DFAD107B2A31C /* ICMPTransportTests.swift */,
+				7EFE4AF7151FC62BF28EE3FE /* InterfaceManagerTests.swift */,
+				D2CF0C87B8ED87A1FEF12ED3 /* SoundManagerTests.swift */,
+				FB4B6DDBE4C2167EB7B98E07 /* TCPTransportTests.swift */,
+			);
+			path = Engine;
+			sourceTree = "<group>";
+		};
+		1AA009F7B8B7578426BF98C0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				14D421D9FE6E3B5A69A93783 /* ConfigFile.swift */,
+				B128B53649B3A5B69A6FF0E2 /* DNSResolution.swift */,
+				5249AC960E15F2709C13260D /* HostConfiguration.swift */,
+				2164AE3A4A136E4057901DA5 /* PingProtocol.swift */,
+				7F8042C114EAB6F70DD215D9 /* PingResult.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		55706214B78BC4BBEF17A733 /* PingyDingy */ = {
+			isa = PBXGroup;
+			children = (
+				80F44B3B3237EF2D9332B7BE /* Assets.xcassets */,
+				AD82DFFB663307DF181EC758 /* PingyDingy.entitlements */,
+				4BEFD6EAEFCC8C9E756B3112 /* PingyDingyApp.swift */,
+				A3D638D3C53DF3AA7B69B505 /* Engine */,
+				1AA009F7B8B7578426BF98C0 /* Models */,
+				EA30E202464F195E609B63D0 /* Theme */,
+				692DD376CEED9DACA08A296E /* Utilities */,
+				C3DE8ED7884068CE60B22028 /* Views */,
+			);
+			path = PingyDingy;
+			sourceTree = "<group>";
+		};
+		65B295A70847DFDDE7EAD541 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BA79A796BA5BE0EBCF1845CA /* PingyDingy.app */,
+				CBBB4A178327877DBA6A3D85 /* PingyDingyTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		692DD376CEED9DACA08A296E /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				360A8C71C3773EA2F8268B0D /* DataRetentionService.swift */,
+				201BF89C6454436D72E206BB /* ExportService.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		6A2D2E1314E63A05B4190EEF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DDBF8D439AEB5F4441CF3670 /* ConfigFileTests.swift */,
+				1ED690304016382C0B9A0666 /* ModelsTests.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		9DC88485D2F7685176D3FEA1 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				0FD8DF71031CE0D5F09169B8 /* DataRetentionServiceTests.swift */,
+				D9BD2FEC46E21A78406834E3 /* ExportServiceTests.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		A3D638D3C53DF3AA7B69B505 /* Engine */ = {
+			isa = PBXGroup;
+			children = (
+				A84E5E4E6616FAF2BD37CF56 /* DNSResolver.swift */,
+				8925AB494AEEC57DCA22C109 /* HostMonitor.swift */,
+				2C0CAA8A3059507D1655733A /* ICMPTransport.swift */,
+				506E8E648FCF5231792F5C2C /* InterfaceManager.swift */,
+				1A354FF773851C5B3ADA877A /* MonitoringEngine.swift */,
+				9F1159C7FF6E1D4A2D602C78 /* PingTransport.swift */,
+				7C52EA42D84F80320725AC9F /* SoundManager.swift */,
+				095F96329A3213284717BFAB /* TCPTransport.swift */,
+			);
+			path = Engine;
+			sourceTree = "<group>";
+		};
+		BEAC1307809E4EB996AA3EA3 /* PingyDingyTests */ = {
+			isa = PBXGroup;
+			children = (
+				60F7706C617DA32B4C0F6109 /* PingyDingyTests.swift */,
+				169D0D1915D104223D181B56 /* Engine */,
+				6A2D2E1314E63A05B4190EEF /* Models */,
+				9DC88485D2F7685176D3FEA1 /* Utilities */,
+			);
+			path = PingyDingyTests;
+			sourceTree = "<group>";
+		};
+		C3DE8ED7884068CE60B22028 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1279392FCA30AE326F756A6D /* MainView.swift */,
+				E883A1653438F7D30909A011 /* iPad */,
+				CC7F8E4BB3209CF036F61853 /* Landscape */,
+				FE3F03152CE60D00A3029144 /* Portrait */,
+				C41F9E51357C42F89D5124E2 /* Sheets */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C41F9E51357C42F89D5124E2 /* Sheets */ = {
+			isa = PBXGroup;
+			children = (
+				56BCA9EB90A0335FE2F38608 /* AddEditHostSheet.swift */,
+				A0CC0E51AA6E6CED5EE3A20D /* DNSChangePopover.swift */,
+				360161DB61520D74F3CC126E /* ExportSheet.swift */,
+				246FA17580B63727BB034845 /* ImportPreviewSheet.swift */,
+				9D329491AD8E44AE4C985977 /* SettingsSheet.swift */,
+				FF06BBBBB5C212692469921C /* ShareConfigSheet.swift */,
+			);
+			path = Sheets;
+			sourceTree = "<group>";
+		};
+		CC7F8E4BB3209CF036F61853 /* Landscape */ = {
+			isa = PBXGroup;
+			children = (
+				6AC2C5C1F9AC3CA2A906A89B /* HistogramStackView.swift */,
+				717F08DC37FC769FFE089695 /* HostHistogramStrip.swift */,
+			);
+			path = Landscape;
+			sourceTree = "<group>";
+		};
+		E883A1653438F7D30909A011 /* iPad */ = {
+			isa = PBXGroup;
+			children = (
+				2ADC697C4BFAEC5950722523 /* SplitView.swift */,
+			);
+			path = iPad;
+			sourceTree = "<group>";
+		};
+		EA30E202464F195E609B63D0 /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				B738C5BD8646B389FE814958 /* ThemeModifiers.swift */,
+				14BBCC014E54895FFE3B0CFE /* TronTheme.swift */,
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
+		FE3F03152CE60D00A3029144 /* Portrait */ = {
+			isa = PBXGroup;
+			children = (
+				AEE1C2A2D561EA2B6D660E5E /* EmptyStateView.swift */,
+				59A55B30BEF3C11D1980911B /* FilterChipBar.swift */,
+				020D4B366C6EF1B86F9E1250 /* HostCardListView.swift */,
+				1507473F1A00A2E1CDF91A95 /* HostCardView.swift */,
+				E47EEFCE766667FE46E42ACA /* ToolbarView.swift */,
+			);
+			path = Portrait;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4B0024A5BFE061885032B06F /* PingyDingyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 87E47D44EA481A25240B57D1 /* Build configuration list for PBXNativeTarget "PingyDingyTests" */;
+			buildPhases = (
+				DF0C3DE54C2A61FABC1167E1 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B1DEDE68A0F7539BE9A28BAC /* PBXTargetDependency */,
+			);
+			name = PingyDingyTests;
+			packageProductDependencies = (
+			);
+			productName = PingyDingyTests;
+			productReference = CBBB4A178327877DBA6A3D85 /* PingyDingyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		77475D2BCE6C8CCE8D87790D /* PingyDingy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 754BA730D5B90069DAA2F460 /* Build configuration list for PBXNativeTarget "PingyDingy" */;
+			buildPhases = (
+				36A59B9EA06AF19870FA5D2C /* Sources */,
+				1BDCB6807D2355A408CE32E4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PingyDingy;
+			packageProductDependencies = (
+			);
+			productName = PingyDingy;
+			productReference = BA79A796BA5BE0EBCF1845CA /* PingyDingy.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B1E4FE071949C14C8E86263D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 2630;
+				TargetAttributes = {
+					4B0024A5BFE061885032B06F = {
+						DevelopmentTeam = BB4S225265;
+						ProvisioningStyle = Automatic;
+					};
+					77475D2BCE6C8CCE8D87790D = {
+						DevelopmentTeam = BB4S225265;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 5F51FD4D4DC6484CCBEADCE0 /* Build configuration list for PBXProject "PingyDingy" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 013CCA1C4CB4CC69A0B35B9A;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 65B295A70847DFDDE7EAD541 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				77475D2BCE6C8CCE8D87790D /* PingyDingy */,
+				4B0024A5BFE061885032B06F /* PingyDingyTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1BDCB6807D2355A408CE32E4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D1C7BD8A09F7C880CBFBD66 /* Assets.xcassets in Resources */,
+				59DD15B53FC4DBBC47F638F0 /* Sounds in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		36A59B9EA06AF19870FA5D2C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34E5765BE4A23E591E332D48 /* AddEditHostSheet.swift in Sources */,
+				A436DB18C79F8582D330C4E4 /* ConfigFile.swift in Sources */,
+				B75876C277AEDD3D4F90DB26 /* DNSChangePopover.swift in Sources */,
+				C889F7E7AF29AEE4EAA2A1A2 /* DNSResolution.swift in Sources */,
+				4748475DFBA1342AAE9B6144 /* DNSResolver.swift in Sources */,
+				B94AFED4E98485B4BB96E0FF /* DataRetentionService.swift in Sources */,
+				EB183F7097787F0FDEAB75E8 /* EmptyStateView.swift in Sources */,
+				A061ABEFACAA1B0745512347 /* ExportService.swift in Sources */,
+				EC20E1F3EBA28405E12E5DAD /* ExportSheet.swift in Sources */,
+				8720F5CEBAB2A524AF0762A0 /* FilterChipBar.swift in Sources */,
+				D0542904F38767A98D9729D6 /* HistogramStackView.swift in Sources */,
+				0E58C7F9ED67830863A3319C /* HostCardListView.swift in Sources */,
+				0CD1E297AFA13AFA867B4113 /* HostCardView.swift in Sources */,
+				373417CF7DB24BDC0373CF4D /* HostConfiguration.swift in Sources */,
+				C3B9CABA6711028227D2F35E /* HostHistogramStrip.swift in Sources */,
+				EC75B646164C89D3C03A96E7 /* HostMonitor.swift in Sources */,
+				CA1FDE5D709EB569F7BB31A2 /* ICMPTransport.swift in Sources */,
+				F8A86F8BD79C38F8C63A2567 /* ImportPreviewSheet.swift in Sources */,
+				27A44BC2D136DD0A05ECD7B2 /* InterfaceManager.swift in Sources */,
+				85816D16E9658BB687703CB2 /* MainView.swift in Sources */,
+				A7EB3596943553799A464920 /* MonitoringEngine.swift in Sources */,
+				D796AACD8B15426FC82CDED3 /* PingProtocol.swift in Sources */,
+				63BD8F31B980CC63B1131BC3 /* PingResult.swift in Sources */,
+				19BE75861500F85A6079420D /* PingTransport.swift in Sources */,
+				EF64130436422548659E6369 /* PingyDingyApp.swift in Sources */,
+				DFC83512C88218B63FA3131A /* SettingsSheet.swift in Sources */,
+				92F20DBC6E8338D1DECC6D32 /* ShareConfigSheet.swift in Sources */,
+				C2C34E2A78FB30C2199F357B /* SoundManager.swift in Sources */,
+				A7FAD0585BB402B010DE9638 /* SplitView.swift in Sources */,
+				00A2E233096353C11D57AA0C /* TCPTransport.swift in Sources */,
+				BF4659DDC06F53234D98A02A /* ThemeModifiers.swift in Sources */,
+				B7E56CE34DA7E49BA6A231DA /* ToolbarView.swift in Sources */,
+				5F617A25C23DE4607D6B14E3 /* TronTheme.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF0C3DE54C2A61FABC1167E1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBFB57290C1E5574446B2406 /* ConfigFileTests.swift in Sources */,
+				FEF38316955CA640EB7F3D19 /* DNSResolverTests.swift in Sources */,
+				08B934896FDEA4F0768035D7 /* DataRetentionServiceTests.swift in Sources */,
+				BB23CF918F38C1904F40A119 /* ExportServiceTests.swift in Sources */,
+				7D62FD7ABDBC06ADC0570984 /* HostMonitorTests.swift in Sources */,
+				980339F21062133E2AF42EBE /* ICMPTransportTests.swift in Sources */,
+				6E405915C5563F46CE27CD4D /* InterfaceManagerTests.swift in Sources */,
+				26FFC4C4E912D03A1DC943EF /* ModelsTests.swift in Sources */,
+				E376173EB12E0F51C918A7CB /* PingyDingyTests.swift in Sources */,
+				D196D47F294A3F308BE3568E /* SoundManagerTests.swift in Sources */,
+				DB00FD9A22DE77A5ABFC7691 /* TCPTransportTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B1DEDE68A0F7539BE9A28BAC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 77475D2BCE6C8CCE8D87790D /* PingyDingy */;
+			targetProxy = A205526C22B274404216FED6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		217ADE983A2D671867484586 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 12;
+				INFOPLIST_FILE = PingyDingy/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pingydingy;
+				SDKROOT = iphoneos;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		986F6124FEC98B454385B391 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PingyDingy.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PingyDingy";
+			};
+			name = Release;
+		};
+		9B247B9141279A0DC4ED9226 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PingyDingy.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PingyDingy";
+			};
+			name = Debug;
+		};
+		B8F7067F5373CC867E8B9F7B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 12;
+				INFOPLIST_FILE = PingyDingy/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pingydingy;
+				SDKROOT = iphoneos;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BD692713B57C9B72E0F3562C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = BB4S225265;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pingydingy;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 6.0;
+			};
+			name = Debug;
+		};
+		CB43C75A97F72D97BD2EE5EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = BB4S225265;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pingydingy;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 6.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5F51FD4D4DC6484CCBEADCE0 /* Build configuration list for PBXProject "PingyDingy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD692713B57C9B72E0F3562C /* Debug */,
+				CB43C75A97F72D97BD2EE5EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		754BA730D5B90069DAA2F460 /* Build configuration list for PBXNativeTarget "PingyDingy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B8F7067F5373CC867E8B9F7B /* Debug */,
+				217ADE983A2D671867484586 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		87E47D44EA481A25240B57D1 /* Build configuration list for PBXNativeTarget "PingyDingyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9B247B9141279A0DC4ED9226 /* Debug */,
+				986F6124FEC98B454385B391 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B1E4FE071949C14C8E86263D /* Project object */;
+}
